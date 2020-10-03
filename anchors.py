@@ -21,9 +21,9 @@ def get_request(url: str) -> get:
     try:
         if url:
             if not url.startswith("http"):
-                print("Prepending HTTPS:// to input URL.")
+                print("\nPrepending HTTPS:// to input URL.")
                 url = "https://" + url
-            print("Sending HTTPS request to " + url)
+            print("\nSending HTTPS request to " + url)
             return get(url)
         else:
             exit(1)
