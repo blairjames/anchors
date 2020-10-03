@@ -66,7 +66,7 @@ def main():
     links = get_anchors(get_request(url))
     links = [l for l in links if l.has_attr('href')]
     links = [str(l['href']) for l in links]
-    print("\n\n  ******  All external Links in page  ******  \n")
+    print("\n\n  ******  Links embedded in page  ******  \n")
     [print(l + "\n") for l in links if l.startswith("http")]
 
 if __name__ == '__main__':
