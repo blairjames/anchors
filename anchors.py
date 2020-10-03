@@ -58,7 +58,7 @@ def bruce():
     print("  '..-'   '-..'   ")
     print("    `-._ _.-`     ")
     print("        '         ")
-    print("     ANCHORS..")
+    print("     ANCHORS..\n")
 
 def main():
     bruce()
