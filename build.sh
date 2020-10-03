@@ -8,7 +8,7 @@ timestamp () {
     date +"%Y%m%d_%H%M%S"
 }
 
-docker build . -t blairy/anchors:$(timestamp) || echo 'Docker Build Failed!' 
+docker build . -t blairy/anchors:$(timestamp) --no-cache || echo 'Docker Build Failed!' 
 
 git="/usr/bin/git -C /home/docker/anchors"
 
