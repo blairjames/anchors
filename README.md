@@ -1,7 +1,7 @@
 # anchors
 #### Retrieve and display all embedded links contained in a given URL.
 
-Usage ```docker run blairy/anchors python.org ```
+Usage: ```docker run blairy/anchors python.org ```
 
 ```
         _         
@@ -20,7 +20,7 @@ Prepending HTTPS:// to input URL.
 Sending HTTPS request to https://python.org
 
 
-  ******  All external Links in page  ******  
+  ******  Links embedded in page  ******  
 
 https://docs.python.org
 
