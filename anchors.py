@@ -46,7 +46,22 @@ def get_anchors(response: get):
         print("ERROR! in get_anchors: " + str(e))
         exit(1)
 
+def bruce():
+    print("        _         ")
+    print("       (_)        ")
+    print("        |         ")
+    print("   ()---|---()    ")
+    print("        |         ")
+    print("        |         ")
+    print(" __     |     __  ")
+    print("|\     /^\     /| ")
+    print("  '..-'   '-..'   ")
+    print("    `-._ _.-`     ")
+    print("        '         ")
+    print("     ANCHORS..")
+
 def main():
+    bruce()
     url = cli_args()
     links = get_anchors(get_request(url))
     links = [l for l in links if l.has_attr('href')]
