@@ -16,3 +16,6 @@ $git pull git@github.com:blairjames/anchors.git || echo 'Pull Failed!'
 $git add --all || echo 'Add Failed!'
 $git commit -a -m 'Automatic build '$timestp || echo 'Commit Failed!'
 $git push || echo 'Push Failed!'
+
+# Prune
+cd /home/docker/anchors && /usr/bin/git gc --prune
