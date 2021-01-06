@@ -4,11 +4,16 @@ source /root/.ssh/agent/root || . /root/.ssh/agent/root
 
 echo $(date) > /home/docker/anchors/log.build
 
-timestamp () {
+function timestamp () {
     date +"%Y%m%d_%H%M%S"
 }
 
-docker build . -t blairy/anchors:$(timestamp) --no-cache || echo 'Docker Build Failed!' 
+#function () {
+#     
+#}
+
+
+docker build . -t blairy/anchors:$(timestamp) || echo 'Docker Build Failed!' 
 
 git="/usr/bin/git -C /home/docker/anchors"
 
