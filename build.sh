@@ -13,7 +13,7 @@ function timestamp () {
 #}
 
 
-docker build . -t blairy/anchors:$(timestamp) || echo 'Docker Build Failed!' 
+docker build . -t blairy/anchors:$(timestamp) --no-cache --pull --rm || echo 'Docker Build Failed!' 
 
 git="/usr/bin/git -C /home/docker/anchors"
 
